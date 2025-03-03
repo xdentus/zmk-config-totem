@@ -44,6 +44,11 @@
             key-positions = <11 12 13>;
             bindings = <&tog TVP1>;
         };
+
+        combo_game {
+            bindings = <&tog 6>;
+            key-positions = <16 17 18>;
+        };
     };
 
     macros {
@@ -219,6 +224,15 @@
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+            >;
+        };
+
+        GAME {
+            bindings = <
+        &trans  &kp Q   &kp W      &kp E           &kp R        &kp T   &kp Y           &kp UP_ARROW    &kp ENTER        &trans
+        &trans  &kp A   &kp S      &kp D           &trans       &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans     &trans          &trans       &trans  &trans          &trans          &trans           &trans  &trans
+                        &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE    &trans  &trans          &trans
             >;
         };
     };
